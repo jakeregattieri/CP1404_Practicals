@@ -7,14 +7,14 @@ def main():
         lottery_numbers = []
         for number in range(6):
             random_number = random.randint(1,45)
-            if random_number in lottery_numbers:
-                print(random_number)
-                lottery_numbers.pop()
+            while random_number in lottery_numbers:
+                random_number = random.randint(1, 45)
             lottery_numbers.append(random_number)
-            lottery_numbers.sort()
-        new_lottery_numbers = [str(number) for number in lottery_numbers]
-        new_lottery_numbers = ' '.join(new_lottery_numbers)
-        print("{}".format(new_lottery_numbers))
+        lottery_numbers.sort()
+        #new_lottery_numbers = [str(number) for number in lottery_numbers]
+        #new_lottery_numbers = ' '.join(new_lottery_numbers)
+        print("{}".format(lottery_numbers))
 
 
 main()
+
