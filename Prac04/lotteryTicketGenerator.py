@@ -11,9 +11,9 @@ def main():
                 random_number = random.randint(1, 45)
             lottery_numbers.append(random_number)
         lottery_numbers.sort()
-        #new_lottery_numbers = [str(number) for number in lottery_numbers]
-        #new_lottery_numbers = ' '.join(new_lottery_numbers)
-        print("{}".format(lottery_numbers))
+        for number in lottery_numbers:
+            print("{:<4}".format(number), end='')
+        print("\n")
 
 
 main()
