@@ -13,8 +13,7 @@ def main():
         lottery_numbers.sort()
         for number in lottery_numbers:
             print("{:<4}".format(number), end='')
-        print("\n")
+        print()
 
 
 main()
-
