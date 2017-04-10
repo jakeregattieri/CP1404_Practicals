@@ -12,7 +12,7 @@ def main():
             lottery_numbers.append(random_number)
         lottery_numbers.sort()
         for number in lottery_numbers:
-            print("{:<4}".format(number), end='')
+            print("{:<5}".format(number), end='')
         print()
 
 
