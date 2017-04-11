@@ -2,6 +2,7 @@ from kivy.app import App
 from kivy.lang import Builder
 from kivy.app import StringProperty
 from board_game import TicTacToeGame
+from kivy.core.window import Window
 
 
 class TicTacToe(App):
@@ -14,6 +15,7 @@ class TicTacToe(App):
         self.game = TicTacToeGame()
 
     def build(self):
+        Window.size = (400, 400)
         self.title = "Tic Tac Toe! Version 2"
         self.root = Builder.load_file('game_v2.kv')
         return self.root
