@@ -22,8 +22,12 @@ class MilesToKilometres(App):
         self.root.ids.input_miles.text = str(miles)
 
     def get_validated_miles(self):
-        validated_miles = float(self.root.ids.input_miles.text)
-        return validated_miles
+        try:
+            validated_miles = float(self.root.ids.input_miles.text)
+            return validated_miles
+        except ValueError:
+            return 0
+
 
 
 MilesToKilometres().run()
