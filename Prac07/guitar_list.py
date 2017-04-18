@@ -1,3 +1,6 @@
+from Prac07.guitar import Guitar
+
+
 class GuitarList:
     def __init__(self):
         self.guitars = []
@@ -7,4 +10,3 @@ class GuitarList:
 
     def add(self, guitar):
         self.guitars.append(guitar)
-

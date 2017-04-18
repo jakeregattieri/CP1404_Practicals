@@ -42,7 +42,7 @@ def load_drinks(filename):
     input_file = open(filename)
     for line in input_file:
         parts = line.strip().split(',')
-        # print(parts)
+        #print(parts)
         all_drinks.append(Drink(parts[0], float(parts[1]), float(parts[2]), float(parts[3])))
     # print(str([str(drink) for drink in all_drinks]))
     input_file.close()
