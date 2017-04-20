@@ -20,6 +20,7 @@ class MilesToKilometres(App):
     def handle_increment(self, change):
         miles = self.get_validated_miles() + change
         self.root.ids.input_miles.text = str(miles)
+        self.handle_miles_to_kilometres()
 
     def get_validated_miles(self):
         try:

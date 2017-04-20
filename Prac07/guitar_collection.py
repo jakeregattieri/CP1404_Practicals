@@ -17,14 +17,12 @@ def main():
     # print("These are my Guitars:")
 
     guitars = []
-    run = True
-    while run:
-        name = input("name:")
-        if name == "":
-            break
+    name = input("name:")
+    while name != "":
         year = input("year:")
         cost = input("cost:")
         guitars.append(Guitar(name, int(year), float(cost)))
+        name = input("name:")
     # guitars.append(Guitar("Gibson L-5 CES", 1922, 16035.40))
     # guitars.append(Guitar("Line 6 JTV-59", 2010, 1512.9))
     # guitars.append(Guitar("Fender Stratocaster", 1964, 18480.65))
