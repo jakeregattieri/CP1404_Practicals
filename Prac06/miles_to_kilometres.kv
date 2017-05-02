@@ -1,3 +1,25 @@
+<Widget>:
+    canvas.before:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    color: 0, 0, 0, 0
+
+<Button>:
+    background_normal: ''
+    background_down: 'atlas://data/images/defaulttheme/button'
+    canvas.after:
+        Color:
+            rgba: 0, 0, 0, 1
+        Line:
+            rectangle: self.x + 1, self.y + 1, self.width - 1, self.height - 1
+<TextInput>
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, 1
+
 BoxLayout:
     orientation: "vertical"
     BoxLayout:
@@ -22,7 +44,6 @@ BoxLayout:
         id: output_kilometres
         text:""
         font_size: 48
-        color: (1,0,1,0)
 
 
 #BoxLayout:

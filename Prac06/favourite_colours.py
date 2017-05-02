@@ -25,7 +25,7 @@ class FavouriteColours(App):
 
     def press_entry(self, instance):
         name = instance.text
-        self.text_output = "{} favourite colour is {}.".format(name, self.favourite_colours[name])
+        self.text_output = "{}'s favourite colour is {}.".format(name, self.favourite_colours[name])
 
     def clear_widgets(self):
         self.root.ids.entriesBox.clear_widgets()
