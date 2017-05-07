@@ -7,6 +7,7 @@
 # for name in phonebook:
 #     print(phonebook[name])
 
+
 class Thing:
     def __init__(self, a, b):
         self.a = a
@@ -14,6 +15,7 @@ class Thing:
 
     def change(self, b):
         self.a += b
+
 
 def run_tests():
     it = Thing(5, 6)
